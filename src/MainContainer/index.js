@@ -41,7 +41,7 @@ class MainContainer extends Component {
     render(){
         return(
             <div className="searchcontainer">
-                <h1>Your search for {this.props.query} gifs:</h1>
+                <h1 id="h1">Your search for {this.props.query} gifs:</h1>
                 {this.state.loading ? <span>Data is loading...</span> : <GifsContainer gifs={this.state.gifs}/>}
             </div>
         )
