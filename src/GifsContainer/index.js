@@ -6,7 +6,8 @@ const GifsContainer = (props) => {
         return (
             <ui key={i}>
                 {/* <img src={gif.bitly_url}></img> */}
-                <img src={gif.url}></img>
+                {/* <img src={gif.url}></img> */}
+                <img src={gif.images.downsized.url}></img>
             </ui>
         )
     })
