@@ -23,7 +23,7 @@ class SearchContainer extends Component {
         console.log(this.state, 'query');
         return(
             <form class="ui_input" onSubmit={this.handleQuery}>
-                <input type="search" placeholder="Search..." onChange={this.handleInput}/><br/>
+                <input type="search" name="query" placeholder="Search..." onChange={this.handleInput}/><br/>
                 <button color='yellow' sie="medium" type='submit' value='submit'>Search</button>
             </form>
         )
